@@ -14,16 +14,32 @@
 
 @implementation ViewController
 
+@synthesize scrollView, imageView, label;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.scrollView.translatesAutoresizingMaskIntoConstraints = NO;
+    self.imageView.translatesAutoresizingMaskIntoConstraints = NO;
+    self.label.translatesAutoresizingMaskIntoConstraints = NO;
+    
+    self.imageView.image = [UIImage imageNamed:@"image.png"];
+
+    self.label.text = @"Text text Text text Text text Text text Text text Text text Text text Text text Text text Text text Text text Text text Text text Text text Text text Text text Text text Text text Text text Text text Text text Text text Text text Text text Text text Text text Text text Text text Text text END";
+    [self.label sizeToFit];
+    
+    NSDictionary *viewsDictionnary = NSDictionaryOfVariableBindings(scrollView, imageView, label);
+    [self.scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[imageView]-20-[label]-10-|" options:0 metrics:0 views:viewsDictionnary]];
+    
+    
+    self.imageView.userInteractionEnabled = YES;
+    [self.imageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap)]];
 }
 
-- (void)didReceiveMemoryWarning
+- (void)tap
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"View2"] animated:YES];
 }
 
 @end

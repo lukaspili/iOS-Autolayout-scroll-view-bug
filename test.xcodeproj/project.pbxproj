@@ -19,6 +19,7 @@
 		80746B681701F6ED00D78508 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80746B661701F6ED00D78508 /* MainStoryboard_iPhone.storyboard */; };
 		80746B6B1701F6ED00D78508 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80746B691701F6ED00D78508 /* MainStoryboard_iPad.storyboard */; };
 		80746B6E1701F6ED00D78508 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80746B6D1701F6ED00D78508 /* ViewController.m */; };
+		80746B751701F82500D78508 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 80746B741701F82500D78508 /* image.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		80746B6A1701F6ED00D78508 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		80746B6C1701F6ED00D78508 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		80746B6D1701F6ED00D78508 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		80746B741701F82500D78508 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		80746B551701F6ED00D78508 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				80746B741701F82500D78508 /* image.png */,
 				80746B561701F6ED00D78508 /* test-Info.plist */,
 				80746B571701F6ED00D78508 /* InfoPlist.strings */,
 				80746B5A1701F6ED00D78508 /* main.m */,
@@ -167,6 +170,7 @@
 				80746B651701F6ED00D78508 /* Default-568h@2x.png in Resources */,
 				80746B681701F6ED00D78508 /* MainStoryboard_iPhone.storyboard in Resources */,
 				80746B6B1701F6ED00D78508 /* MainStoryboard_iPad.storyboard in Resources */,
+				80746B751701F82500D78508 /* image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
